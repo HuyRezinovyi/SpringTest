@@ -1,0 +1,31 @@
+package springtest2;
+
+public class Event {
+	public enum rating{HIGH, MEDIUM, LOW};
+	
+	String name;
+	double basePrice;
+	rating rate;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public double getBasePrice() {
+		return basePrice;
+	}
+	public void setBasePrice(String basePrice) {
+		this.basePrice = basePrice;
+	}
+	public rating getRate() {
+		return rate;
+	}
+	public void setRate(rating rate) {
+		this.rate = rate;
+	}
+	
+	public Event (String name, double basePrice, rating rate){
+		
+	}
+}

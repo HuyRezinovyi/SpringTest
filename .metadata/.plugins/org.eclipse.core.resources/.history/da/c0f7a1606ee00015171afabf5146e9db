@@ -1,0 +1,9 @@
+package springtest2;
+
+import java.util.Map;
+
+public class DAOAuditoriumEvent {
+	public static Map<Event, Auditorium> map = new HashMap<Event, Auditorium>();
+	
+	
+}

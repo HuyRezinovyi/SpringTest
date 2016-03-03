@@ -1,0 +1,7 @@
+package springtest2;
+
+public class UserService {
+	List<User> users = new ArrayList<User>();
+	
+	
+}
