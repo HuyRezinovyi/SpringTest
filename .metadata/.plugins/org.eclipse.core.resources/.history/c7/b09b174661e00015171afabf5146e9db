@@ -1,0 +1,60 @@
+package springtest2;
+
+import java.util.List;
+
+public class User {
+	
+	private String firstName;
+	private String lastName;
+	private String id;
+	private String email;
+	
+	private List<Ticket> tickets;
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public List<Ticket> getTickets() {
+		return tickets;
+	}
+
+	public void addTickets(List<Ticket> tickets) {
+		this.tickets.addAll(tickets);
+	}
+	
+	public void addTicket(Ticket ticket){
+		this.tickets.add();
+	}
+
+	
+	
+	
+}

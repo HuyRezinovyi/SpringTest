@@ -1,0 +1,50 @@
+package springtest2;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import springtest2.Event.rating;
+
+public class EventService {
+	List<Event> events = new ArrayList<Event>();
+	
+	public void create(String name, double basePrice, rating rate, Date dateTime){
+		Event event = new Event(name, basePrice, rate, dateTime);
+		events.add(event);
+	}
+	
+	public void remove(Event event){
+		events.remove(event);
+	}
+	
+	public Event getByName(String name){
+		for (Event event: events){
+			if (event.getName().equals(name))
+				return event;
+		}
+		return null;
+	}
+	
+	public List<Event> getForDateRange(Date from, Date to){
+		List<Event> tempEvents = new ArrayList<Event>();
+		for (Event event: events){
+			if (event.getDateTime().after(from) && 
+					event.getDateTime().before(to))
+				tempEvents.add(event);
+		}
+		
+		if (!tempEvents.isEmpty())
+			return tempEvents;
+		
+		return null;
+	}
+	
+	public List<Event> getNextEvents(Date to){
+		return getForDateEange();
+	}
+
+	getNextEvents(to) - returns events from now till the ‘to’ date (OPTIONAL)
+	assignAuditorium(event, auditorium, date) - assign auditorium for event for specific date. Only one auditorium for Event for specific dateTime
+	
+}

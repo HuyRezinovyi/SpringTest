@@ -1,0 +1,5 @@
+package springtest2;
+
+public class DAOAuditoriumEvent {
+	public static Map<Event, Auditorium> map;
+}

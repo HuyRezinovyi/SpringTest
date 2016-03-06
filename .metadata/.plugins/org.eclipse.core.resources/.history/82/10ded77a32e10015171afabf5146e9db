@@ -1,0 +1,8 @@
+package springtest2;
+
+public class RoomDate {
+	private Auditorium room;
+	private Date dateTime;
+	
+	
+}

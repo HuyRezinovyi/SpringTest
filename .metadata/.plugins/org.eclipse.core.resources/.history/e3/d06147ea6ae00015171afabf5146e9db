@@ -1,0 +1,6 @@
+package springtest2;
+
+public class AuditoriumService {
+	List<Auditorium> auditoriums = new ArrayList<Auditorium>();
+	
+}

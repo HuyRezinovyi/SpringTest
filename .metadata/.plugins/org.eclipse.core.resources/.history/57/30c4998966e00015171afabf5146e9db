@@ -1,0 +1,5 @@
+package springtest2;
+
+public class EventService {
+	List<Event> events = new ArrayList<Event>();
+}

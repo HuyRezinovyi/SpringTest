@@ -1,0 +1,19 @@
+package springtest2;
+
+import java.util.Date;
+
+public class RoomDate {
+	private Auditorium room;
+	private Date dateTime;
+	
+	public Auditorium getAuditorium(){
+		return this.room;
+	}
+	
+	public RoomDate(Auditorium room, Date date){
+		this.room = room;
+		this.dateTime = date;
+	}
+	
+	
+}

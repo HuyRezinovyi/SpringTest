@@ -1,0 +1,19 @@
+package springtest2;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class DAOAuditoriumEvent {
+	public static Map<Event, Auditorium> map = new HashMap<Event, Auditorium>();
+	
+	public void add(Event event, Auditorium auditorium){}
+	
+	public void remove(Event event, Auditorium auditorium){
+		map.remove(event, auditorium);
+	}
+	
+	public Auditorium findByEvent(Event event){}
+	
+	public Event findByAuditorium(Auditorium auditorium){}
+	
+}

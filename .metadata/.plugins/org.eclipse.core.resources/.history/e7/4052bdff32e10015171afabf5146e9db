@@ -1,0 +1,38 @@
+package springtest2;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+
+public class DAOAuditoriumEvent {
+	public static Map<Auditorium, Event> map = new LinkedHashMap<Auditorium, Event>();
+	
+	public void add(Auditorium auditorium, Event event){
+		map.put(auditorium, event);
+	}
+	
+	public void remove(Auditorium auditorium, Event event){
+		map.remove(auditorium, event);
+	}
+	
+	public Event findByAuditorium(Auditorium auditorium){
+		return map.get(auditorium);
+	}
+	
+	public List<Auditorium> findByEvent(Event event){
+		List<Auditorium> lst = new ArrayList<Auditorium>(); 
+		
+		for (Auditorium au: map.keySet()){
+			if (map.get(au).equals(event))
+				lst.add(au);
+		}
+		
+		if (!lst.isEmpty())
+			return lst;
+		
+		return null;
+	}
+	
+}

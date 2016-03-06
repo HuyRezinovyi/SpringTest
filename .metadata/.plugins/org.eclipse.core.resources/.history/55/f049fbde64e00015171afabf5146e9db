@@ -1,0 +1,39 @@
+package springtest2;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class UserService {
+	List<User> users = new ArrayList<User>();
+	
+	public void register(String firstName, String lastName, String email){
+		User usr = new User(firstName, lastName, email);
+		users.add(usr);
+	}
+	
+	public User getById(String id){
+		for (User user : users){
+			if(user.getId().equalsIgnoreCase(id))
+				return user;
+		}
+		return null;
+	}
+	
+	public User getByName(String firstName, String lastName){
+		for (User user : users){
+			if(user.getFirstName().equalsIgnoreCase(firstName) 
+					|| user.getLastName().equalsIgnoreCase(lastName))
+				return user;
+		}
+		return null;
+	}
+	
+	public User getByEmail(String email){
+		for (User user : users){
+			if(user.getEmail().equalsIgnoreCase(email))
+				return user;
+		}
+		return null;
+	}
+	
+}

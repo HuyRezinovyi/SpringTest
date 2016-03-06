@@ -1,0 +1,9 @@
+package springtest2;
+
+public class Event {
+	Enum rating{HIGH; MEDIUM; LOW};
+	
+	String name;
+	String basePrice;
+	
+}
