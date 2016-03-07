@@ -1,0 +1,8 @@
+package springtest2;
+
+public class App {
+	public static void main(String[] args){
+		RoomDate rd = new RoomDate(new Auditorium("asdas", 123, 0), new Date());
+		Method[] methods = 
+	}
+}

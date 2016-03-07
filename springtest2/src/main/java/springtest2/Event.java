@@ -5,9 +5,9 @@ import java.util.Date;
 public class Event {
 	public enum rating{HIGH, MEDIUM, LOW};
 	
-	String name;
-	double basePrice;
-	rating rate;
+	private String name;
+	private double basePrice;
+	private rating rate;
 	
 	public String getName() {
 		return name;

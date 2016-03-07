@@ -1,0 +1,28 @@
+package springtest2;
+
+import java.util.Date;
+
+public class Ticket {
+	private Event event;
+	private Date date;
+	private boolean isVip;
+	
+	public Date getDate(){
+		return date;
+	}
+
+	public Event getEvent(){
+		return event;
+	}
+	
+	public boolean getIsVip(){
+		return isVip;
+	}
+
+	public Ticket(Date date, Event event, boolean isVip){
+		this.date = date;
+		this.event = event;
+		this.isVip = isVip;
+	}
+	
+}

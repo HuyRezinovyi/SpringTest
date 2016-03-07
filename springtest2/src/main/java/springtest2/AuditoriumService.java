@@ -17,4 +17,8 @@ public class AuditoriumService {
 		return auditorium.getNumOfVipSeats();
 	}
 	
+	public String getName(Auditorium auditorium){
+		return auditorium.getName();
+	}
+	
 }

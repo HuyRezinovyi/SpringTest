@@ -1,0 +1,6 @@
+package springtest2;
+
+public class Ticket {
+	private Event event;
+	private Date date;
+}

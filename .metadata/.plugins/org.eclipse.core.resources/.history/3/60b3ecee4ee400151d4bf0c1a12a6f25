@@ -1,0 +1,47 @@
+package springtest2;
+
+import java.util.Date;
+
+public class Ticket {
+	private Event event;
+	private Date date;
+	private Auditorium auditorium;
+	private boolean isVip;
+	private double price;
+	
+	private static final double DEFAULT_PRICE = 100.0;
+	
+	public Date getDate(){
+		return date;
+	}
+
+	public Event getEvent(){
+		return event;
+	}
+	
+	public boolean getIsVip(){
+		return isVip;
+	}
+	
+	public Auditorium getAuditorium(){
+		return auditorium;
+	}
+	
+	public double getPrice(){
+		return price;
+	}
+	
+	public Ticket(Date date, Auditorium auditorium, Event event, boolean isVip){
+		this(date, auditorium, event, isVip? 2*DEFAULT_PRICE : DEFAULT_PRICE, isVip);
+	}
+	
+	public Ticket(Date date, Auditorium auditorium, Event event, double price, boolean isVip){
+		this.date = date;
+		this.event = event;
+		this.isVip = isVip;
+		this.auditorium = auditorium;
+		this.price = price;
+	}
+	
+	
+}
